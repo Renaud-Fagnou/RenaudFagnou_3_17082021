@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+header{
+    display: flex;
+    height: 45px;
+}
+header :nth-child(2n+1){
+    flex: 1;
+}
+header a{
+    margin-left: 1em;
+}
+header a:visited{
+    color: black;
+    text-shadow: 0 0 50px black;
+}
+header a i{
+    font-size: 1.25em;
+    filter: blur(0.6px);
+}
+header img{
+    flex: 2;
+    max-width: 45%;
+    height: 60%;
+    margin-top: 0.35em;
+}

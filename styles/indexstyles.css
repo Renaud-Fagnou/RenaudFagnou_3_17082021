@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+header{
+    display: flex;
+    height: 45px;
+}
+header a:first-child{
+    display: none;
+}
+header :nth-child(2n){
+    flex: 1;
+}
+header img{
+    flex: 2;
+    max-width: 45%;
+    height: 60%;
+    margin-top: 0.35em;
+}
+main{
+    font-family: Roboto;
+}
+
+/* MAIN'S FIRST SECTION*/
+
+main section:first-child{
+    height: 335px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+.explore div:first-child{
+    display: flex;
+    flex: 1;
+    background-color: #e6e6e6;
+    box-shadow: inset 0px 3px 3px #7e7e7e38;
+    font-weight: bold;
+}
+.explore div i{
+    padding: 1em 1.25em 0em 6em;
+}
+.explore div i p{
+    flex: 2;
+}
+.explore div:nth-child(2){
+    flex: 3;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+.explore div:last-child{
+    flex: 2;
+    background-color: #F2F2F2;
+    text-align: center;
+    padding-top: 0.8em;
+    padding-bottom: 3.5em;
+}
+h2 + p{
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-top: 0.75em;
+}
+button{
+    background: linear-gradient(#FF79DA, #9356DC);	border-radius: 2em 2em 2em 2em;
+    box-shadow: #24232338 2px 6px 5px;
+    border:inherit;
+	padding: 0.75em 1.5em;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    color: white;
+    line-height: 1.7em;
+}
+div h2{
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 0.8em 2em 0em;
+    margin-bottom: 0;
+}
+
+/* MAIN'S SECOND SECTION */
+
+section > h2{
+    padding: 1.8em 0.8em 0;
+    margin-bottom: 0;
+}
+ol{
+    padding-left: 1.2em;
+}
+ol li > p{
+    background-color: #9356DC;
+    color: white;
+    width: 1em;
+    height: 1em;
+    border-radius: 2em;
+    padding: 0.25em;
+    text-align: center;
+    position: absolute;
+    margin-top: 2.35em;
+}
+li{
+    display: flex;
+    list-style-type: none;
+}
+li div{
+    display: flex;
+    width: 90%;
+    align-self: center;
+    background-color: #F2F2F2;
+    margin: 0.75em;
+    padding: 0.8em 0;
+    border-radius: 1.5em;
+    box-shadow: #24232338 3px 5px 12px;
+}
+li div:hover{
+    background-color: rgba(147,86,220,0.16);
+}
+li div :first-child{
+    color: grey;
+    width: 22.5%;
+    font-size: 1.25em;
+    align-self: center;
+    text-align: center;
+    padding-left: 0.3em;
+}
+li div :last-child{
+    font-weight: bold;
+}
+ol li:nth-child(3) div{
+    background-color: rgba(147,86,220,0.16);
+}
+
+/* MAIN'S THIRD SECTION */
+
+section:nth-child(3){
+    background-color: #f2f2f2;
+}
+section:nth-child(3) h2{
+    background-color: grey;
+}
+section article{
+    background-color: white;
+    width: 92%;
+    margin: 1% 4%;
+    border-radius: 1em;
+    color: green;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-family: Roboto;
+}
+h1{
+    font-family: Shrikhand;
+    padding: 0 7.5%;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin: 0;
+    padding: 1.25em 0 0 1.5em;
+}
+ul{
+    padding: 0 1.5em;
+}
+ul li{
+    display: flex;
+    margin: 0.5em 0;
+}
+ul li i{
+    align-self: center;
+    font-size: 0.8em;
+}
+ul li:nth-child(4){
+    padding-bottom: 2.1em;
+}
+ul li :nth-child(2){
+    margin: 0;
+}
+ul li:first-child i{
+    padding-left: 0.2em;
+}
+ul li:first-child p{
+    padding-left: 0.85em;
+}
+ul li:nth-child(2) p{
+    padding-left: 0.65em;
+}
