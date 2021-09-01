@@ -22,6 +22,44 @@ main{
 a{
     text-decoration-line: none;
 }
+.loading{
+    width: 100%;
+}
+.loading__bar{
+    width: 99%;
+    height: 100px;
+    border:black solid 2px;
+}
+.loading__bar--progress{
+    margin:0;
+    padding:0;
+    height: 100%;
+    background-color: blueviolet;
+    transform-origin: left;
+    animation: progress-bar 5000ms;
+}
+
+@keyframes progress-bar{
+    0% {
+        transform: scaleX(0);
+        opacity: .1;
+    }
+    17% {
+        transform: scaleX(.18);
+    }
+    24% {
+        transform: scaleX(.4);
+    }
+    46% {
+        transform: scaleX(.81);
+    }
+    85%,100% {
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
 
 /* MAIN'S FIRST SECTION*/
 
@@ -61,7 +99,10 @@ h2 + p{
     margin-top: 0.75em;
 }
 button{
-    background: linear-gradient(#FF79DA, #9356DC);	border-radius: 2em 2em 2em 2em;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 2em 2em 2em 2em;
     box-shadow: #24232338 2px 6px 5px;
     border:inherit;
 	padding: 0.75em 1.5em;
@@ -70,6 +111,21 @@ button{
 	outline: inherit;
     color: white;
     line-height: 1.7em;
+    transition: transform 1000ms;
+}
+button > div{
+    background: darken (#FF79DA, #9356DC, 5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+}
+button:hover > div{
+    opacity:1;
 }
 div h2{
     font-size: 1.5em;
@@ -115,8 +171,8 @@ li div{
 li div:hover{
     background-color: rgba(147,86,220,0.16);
 }
-li div:hover{
-    background-color: rgba(147,86,220,0.16);
+li div:hover i{
+    color: #9356DC;
 }
 li div :first-child{
     color: grey;
@@ -128,9 +184,6 @@ li div :first-child{
 }
 li div :last-child{
     font-weight: bold;
-}
-ol li:nth-child(3) div{
-    background-color: rgba(147,86,220,0.16);
 }
 
 /* MAIN'S THIRD SECTION */
@@ -181,7 +234,7 @@ article div i{
     padding: 0.6em 0;
 }
 article div i:hover{
-    background-color: blueviolet;
+    color: blueviolet;
 }
 div div{
     color: black;
@@ -242,4 +295,13 @@ ul li:first-child p{
 }
 ul li:nth-child(2) p{
     padding-left: 0.65em;
+}
+@media all and (min-width: 1024px){
+    body{
+        max-width: 375px;
+        margin: auto;
+    }
+    article p:first-child{
+        margin-left: 18em;
+    }
 }
