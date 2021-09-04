@@ -1,8 +1,10 @@
 header{
     display: flex;
     height: 45px;
-    
-    :nth-child(2n){
+    a{
+        flex: 1;
+    }
+    div{
         flex: 1;
     }
 }
