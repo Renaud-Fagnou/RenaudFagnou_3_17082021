@@ -4,6 +4,10 @@ main {
   font-family: roboto;
 }
 
+h1 {
+  font-family: Shrikhand;
+}
+
 button {
   position: relative;
   z-index: 1;
@@ -141,6 +145,122 @@ footer ul li a i {
   text-align: center;
   padding-top: 0.8em;
   padding-bottom: 3.5em;
+}
+
+.functioning h2 {
+  padding: 1.8em 0.8em 0;
+  margin-bottom: 0;
+}
+.functioning ol {
+  padding-left: 1.2em;
+}
+.functioning ol li {
+  display: flex;
+  list-style-type: none;
+}
+.functioning ol li > p {
+  background-color: #9356DC;
+  color: white;
+  width: 1em;
+  height: 1em;
+  border-radius: 2em;
+  padding: 0.25em;
+  text-align: center;
+  position: absolute;
+  margin-top: 2.35em;
+}
+.functioning ol li div {
+  display: flex;
+  width: 90%;
+  align-self: center;
+  background-color: #F2F2F2;
+  margin: 0.75em;
+  padding: 0.8em 0;
+  border-radius: 1.5em;
+  box-shadow: #24232338 3px 5px 12px;
+}
+.functioning ol li div :first-child {
+  color: grey;
+  width: 22.5%;
+  font-size: 1.25em;
+  align-self: center;
+  text-align: center;
+  padding-left: 0.3em;
+}
+.functioning ol li div :last-child {
+  font-weight: bold;
+}
+.functioning ol li:hover {
+  background-color: rgba(147, 86, 220, 0.16);
+}
+.functioning ol li:hover i {
+  color: #9356DC;
+}
+
+.restaurants {
+  background-color: #f2f2f2;
+  padding-bottom: 3.35em;
+}
+.restaurants h2 {
+  padding: 2.25em 0.8em 0.15em;
+  margin-top: 2.35em;
+}
+.restaurants a {
+  text-decoration-line: none;
+}
+.restaurants a:nth-child(4) article p:first-child {
+  display: none;
+}
+.restaurants a:nth-child(5) article p:first-child {
+  display: none;
+}
+.restaurants a article {
+  background-color: white;
+  width: 90%;
+  margin: 5% 5%;
+  border-radius: 1em;
+  box-shadow: 0 0 15px #00000025;
+  overflow: hidden;
+}
+.restaurants a article p:first-child {
+  position: absolute;
+  margin-left: 17em;
+  background-color: #99E2D0;
+  border-radius: 0.15em;
+  padding: 0.4em 0.9em;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #468f7d;
+}
+.restaurants a article img {
+  object-fit: cover;
+  width: 100%;
+  height: 11em;
+}
+.restaurants a article div {
+  display: flex;
+}
+.restaurants a article div i {
+  width: 15%;
+  font-size: 1.55em;
+  padding: 0.6em 0;
+  color: black;
+}
+.restaurants a article div i:hover {
+  color: blueviolet;
+}
+.restaurants a article div div {
+  color: black;
+  width: 85%;
+  flex-direction: column;
+}
+.restaurants a article div div :first-child {
+  margin: 0;
+  padding: 0.5em 0.65em 0;
+}
+.restaurants a article div div :last-child {
+  margin: 0;
+  padding: 0.25em 0.8em 1em;
 }
 
 /*# sourceMappingURL=index-styles.css.map */
