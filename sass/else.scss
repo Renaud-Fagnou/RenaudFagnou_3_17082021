@@ -1,1 +1,6 @@
-@import "./layout/_header";
+@import "./utils/variables";
+
+@import "./base/typography";
+
+@import "./layout/header";
+@import "./layout/footer";
