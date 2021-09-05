@@ -1,0 +1,41 @@
+.explore{
+    height: 335px;
+    display: flex;
+    flex-direction: column;   
+    &__header{
+        display: flex;
+        flex: 1;
+        background-color: #e6e6e6;
+        box-shadow: inset 0px 3px 3px #7e7e7e38;
+        font-weight: bold;
+        i{
+            padding: 1em 1.25em 0em 6em;
+        }
+    }
+    &__main{
+        flex: 3;
+        background-color: #F2F2F2;
+        text-align: center;
+        p{
+            flex: 2;
+        }
+        h2{
+            font-size: 1.5em;
+            font-weight: 900;
+            padding: 0.8em 2em 0em;
+            margin-bottom: 0;
+            + p{
+                font-size: 1.1em;
+                font-weight: 300;
+                margin-top: 0.7em;
+            }
+        }
+    }
+    &__button{
+        flex: 2;
+        background-color: #F2F2F2;
+        text-align: center;
+        padding-top: 0.8em;
+        padding-bottom: 3.5em;
+    }
+}

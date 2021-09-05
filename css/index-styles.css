@@ -1,5 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+main {
+  font-family: roboto;
+}
+
+button {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 2em 2em 2em 2em;
+  box-shadow: #24232338 2px 6px 5px;
+  border: inherit;
+  padding: 0 1.5em;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  color: white;
+  transition: transform 1000ms;
+}
+button:hover__bg {
+  opacity: 1;
+}
+button__bg {
+  background: darken #FF79DA, #9356DC, 5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+
 header {
   height: 45px;
 }
@@ -26,10 +59,8 @@ header div div:nth-child(2n+1) a {
 
 footer {
   background-color: #3a3a3a;
-  font-family: Roboto;
 }
 footer h1 {
-  font-family: Shrikhand;
   color: white;
   padding: 0 7.5%;
   font-size: 1.1em;
@@ -68,6 +99,48 @@ footer ul li a :nth-child(2) {
 footer ul li a i {
   align-self: center;
   font-size: 0.8em;
+}
+
+.explore {
+  height: 335px;
+  display: flex;
+  flex-direction: column;
+}
+.explore__header {
+  display: flex;
+  flex: 1;
+  background-color: #e6e6e6;
+  box-shadow: inset 0px 3px 3px #7e7e7e38;
+  font-weight: bold;
+}
+.explore__header i {
+  padding: 1em 1.25em 0em 6em;
+}
+.explore__main {
+  flex: 3;
+  background-color: #F2F2F2;
+  text-align: center;
+}
+.explore__main p {
+  flex: 2;
+}
+.explore__main h2 {
+  font-size: 1.5em;
+  font-weight: 900;
+  padding: 0.8em 2em 0em;
+  margin-bottom: 0;
+}
+.explore__main h2 + p {
+  font-size: 1.1em;
+  font-weight: 300;
+  margin-top: 0.7em;
+}
+.explore__button {
+  flex: 2;
+  background-color: #F2F2F2;
+  text-align: center;
+  padding-top: 0.8em;
+  padding-bottom: 3.5em;
 }
 
 /*# sourceMappingURL=index-styles.css.map */
