@@ -8,6 +8,10 @@ h1 {
   font-family: Shrikhand;
 }
 
+footer {
+  font-family: roboto;
+}
+
 button {
   position: relative;
   z-index: 1;
