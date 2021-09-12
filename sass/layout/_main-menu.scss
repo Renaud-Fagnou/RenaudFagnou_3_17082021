@@ -1,15 +1,17 @@
-main img{
-    object-fit: cover;
-    position: absolute;
-    width: 95.5%;
-    height: 16.75em;
-}
-main > div{
+.menu{
+    img{
+        object-fit: cover;
+        position: absolute;
+        width: 95.5%;
+        height: 16.75em;
+    }
+    > div{
     position: absolute;
     background-color: #f2f2f2;
     border-radius: 3em;
     width: 95.5%;
     margin-top: 13.5em;
+    }
 }
 div div{
     display: flex;

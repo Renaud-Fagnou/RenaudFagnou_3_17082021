@@ -12,7 +12,7 @@ footer {
   font-family: roboto;
 }
 
-button {
+.button {
   position: relative;
   z-index: 1;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -26,11 +26,11 @@ button {
   color: white;
   transition: transform 1000ms;
 }
-button:hover__bg {
+.button:hover .button__bg {
   opacity: 1;
 }
-button__bg {
-  background: darken #FF79DA, #9356DC, 5;
+.button__bg {
+  background: #15DEA5;
   position: absolute;
   top: 0;
   right: 0;
@@ -42,27 +42,20 @@ button__bg {
 }
 
 header {
-  height: 45px;
-}
-header div {
   display: flex;
-}
-header div div:nth-child(2) {
-  flex: 2;
+  flex-direction: row;
   justify-content: center;
+  height: 100%;
 }
-header div div:nth-child(2) img {
-  width: 92.5%;
-}
-header div div:nth-child(2n+1) {
-  flex: 1;
-}
-header div div:nth-child(2n+1) a {
+header a {
   height: 72.5%;
   color: black;
   text-shadow: 0 0 50px black;
   font-size: 1.25em;
   filter: blur(0.6px);
+}
+header img {
+  width: 50%;
 }
 
 footer {
@@ -183,6 +176,9 @@ footer ul li a i {
   border-radius: 1.5em;
   box-shadow: #24232338 3px 5px 12px;
 }
+.functioning ol li div:hover {
+  background-color: rgba(147, 86, 220, 0.16);
+}
 .functioning ol li div :first-child {
   color: grey;
   width: 22.5%;
@@ -193,9 +189,6 @@ footer ul li a i {
 }
 .functioning ol li div :last-child {
   font-weight: bold;
-}
-.functioning ol li:hover {
-  background-color: rgba(147, 86, 220, 0.16);
 }
 .functioning ol li:hover i {
   color: #9356DC;
@@ -265,6 +258,39 @@ footer ul li a i {
 .restaurants a article div div :last-child {
   margin: 0;
   padding: 0.25em 0.8em 1em;
+}
+
+.menu img {
+  object-fit: cover;
+  position: absolute;
+  width: 95.5%;
+  height: 16.75em;
+}
+.menu > div {
+  position: absolute;
+  background-color: #f2f2f2;
+  border-radius: 3em;
+  width: 95.5%;
+  margin-top: 13.5em;
+}
+
+div div {
+  display: flex;
+}
+
+div div i {
+  flex: 1;
+}
+
+h2 {
+  font-family: Shrikhand;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  position: absolute;
+  margin-top: 100em;
 }
 
 /*# sourceMappingURL=index-styles.css.map */

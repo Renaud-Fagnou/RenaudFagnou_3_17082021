@@ -1,4 +1,4 @@
-button{
+.button{
     position: relative;
     z-index: 1;
     background: linear-gradient(#FF79DA, #9356DC);
@@ -12,12 +12,12 @@ button{
     color: white;
     transition: transform 1000ms;
     &:hover{
-        &__bg{
+        & .button__bg{
             opacity:1;
         }
     }
     &__bg{
-        background: darken (#FF79DA, #9356DC, 5);
+        background: #15DEA5;
         position: absolute;
         top: 0;
         right: 0;
