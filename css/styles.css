@@ -29,7 +29,7 @@ footer {
   position: relative;
   z-index: 1;
   background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 2em 2em 2em 2em;
+  border-radius: 2em;
   box-shadow: #24232338 2px 6px 5px;
   border: inherit;
   padding: 0 1.5em;
@@ -282,22 +282,45 @@ footer ul li a i {
 .restaurant-menu > div {
   position: absolute;
   background-color: #f2f2f2;
-  border-radius: 3em;
-  width: 95.5%;
+  border-radius: 3em 3em 0 0;
+  width: 87%;
   margin-top: 13.5em;
+  padding: 1em;
+}
+.restaurant-menu > div .button {
+  padding: 0.75em 2.75em;
+  margin: 2em 4.5em 4em;
+}
+.restaurant-menu > div section h3 {
+  margin-left: 0.25em;
+  text-decoration: underline #99E2D0 3px;
 }
 .restaurant-menu > div section article {
   display: inline-block;
   width: 100%;
+  background-color: white;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+.restaurant-menu > div section article h4 {
+  margin: 0.85em 0.5em 0;
+  font-size: 1.1em;
 }
 .restaurant-menu > div section article div {
   display: flex;
   justify-content: space-between;
 }
+.restaurant-menu > div section article div p {
+  margin: 0 0.65em 0.85em;
+  font-size: 0.9em;
+}
+.restaurant-menu > div section article div p + p {
+  font-weight: bold;
+}
 
 footer {
   position: absolute;
-  margin-top: 100em;
+  margin-top: 84.5em;
   width: 95.5%;
 }
 

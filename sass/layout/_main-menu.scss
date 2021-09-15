@@ -8,16 +8,39 @@
     > div{
     position: absolute;
     background-color: #f2f2f2;
-    border-radius: 3em;
-    width: 95.5%;
+    border-radius: 3em 3em 0 0;
+    width: 87%;
     margin-top: 13.5em;
+    padding: 1em;
+        .button{
+            padding: 0.75em 2.75em;
+            margin: 2em 4.5em 4em;
+        }
         section{
+            h3{
+                margin-left: 0.25em;
+                text-decoration: underline #99E2D0 3px;
+            }
             article{
                 display: inline-block;
                 width: 100%;
+                background-color: white;
+                border-radius: 1em;
+                margin-bottom: 1em;
+                h4{
+                margin: 0.85em 0.5em 0;
+                font-size: 1.1em;
+                }
                 div{
                     display: flex;
                     justify-content: space-between;
+                    p{
+                        margin: 0 0.65em 0.85em;
+                        font-size: 0.9em;
+                    }
+                    p + p{
+                        font-weight: bold;
+                    }
                 }
             }
         }
@@ -25,6 +48,6 @@
 }
 footer{
     position: absolute;
-    margin-top: 100em;
+    margin-top: 84.5em;
     width: 95.5%;
 }
