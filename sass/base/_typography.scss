@@ -7,6 +7,19 @@ main{
 h1{
     font-family: Shrikhand;
 }
+h3{
+    font-weight: 400;
+    font-size: 1em;
+}
+.restaurant-menu{
+    h2{
+        font-family: Shrikhand;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 300;
+        font-size: 1.75em;
+    }
+}
 footer{
     font-family: roboto;
 }

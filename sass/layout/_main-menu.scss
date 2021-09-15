@@ -1,4 +1,4 @@
-.menu{
+.restaurant-menu{
     img{
         object-fit: cover;
         position: absolute;
@@ -11,20 +11,20 @@
     border-radius: 3em;
     width: 95.5%;
     margin-top: 13.5em;
+        section{
+            article{
+                display: inline-block;
+                width: 100%;
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
     }
-}
-div div{
-    display: flex;
-}
-div div i{
-    flex: 1;
-}
-h2{
-    font-family: Shrikhand;
-    display: flex;
-    justify-content: space-around;
 }
 footer{
     position: absolute;
     margin-top: 100em;
+    width: 95.5%;
 }

@@ -8,6 +8,19 @@ h1 {
   font-family: Shrikhand;
 }
 
+h3 {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.restaurant-menu h2 {
+  font-family: Shrikhand;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 300;
+  font-size: 1.75em;
+}
+
 footer {
   font-family: roboto;
 }
@@ -260,37 +273,32 @@ footer ul li a i {
   padding: 0.25em 0.8em 1em;
 }
 
-.menu img {
+.restaurant-menu img {
   object-fit: cover;
   position: absolute;
   width: 95.5%;
   height: 16.75em;
 }
-.menu > div {
+.restaurant-menu > div {
   position: absolute;
   background-color: #f2f2f2;
   border-radius: 3em;
   width: 95.5%;
   margin-top: 13.5em;
 }
-
-div div {
-  display: flex;
+.restaurant-menu > div section article {
+  display: inline-block;
+  width: 100%;
 }
-
-div div i {
-  flex: 1;
-}
-
-h2 {
-  font-family: Shrikhand;
+.restaurant-menu > div section article div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 footer {
   position: absolute;
   margin-top: 100em;
+  width: 95.5%;
 }
 
-/*# sourceMappingURL=index-styles.css.map */
+/*# sourceMappingURL=styles.css.map */
