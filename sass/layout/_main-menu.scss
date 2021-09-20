@@ -1,41 +1,55 @@
+body{
+    margin: 2%;
+}
 .restaurant-menu{
     img{
         object-fit: cover;
         position: absolute;
-        width: 95.5%;
+        width: 96%;
         height: 16.75em;
     }
-    > div{
-    position: absolute;
-    background-color: #f2f2f2;
-    border-radius: 3em 3em 0 0;
-    width: 87%;
-    margin-top: 13.5em;
-    padding: 1em;
+    .div-button{
+        text-align: center;
         .button{
             padding: 0.75em 2.75em;
-            margin: 2em 4.5em 4em;
+            margin: 0.7em 0 4em;
         }
+    }
+    > div{
+    position: relative;
+    background-color: #f2f2f2;
+    border-radius: 3em 3em 0 0;
+    top: 225px;
+    padding: 4%;
         section{
+            .underline{
+                content: none;
+                width: 40px;
+                height: 3px;
+                margin: 3px 4px 13px;
+                background-color: $color-tertiary;
+            }
             h3{
-                margin-left: 0.25em;
-                text-decoration: underline #99E2D0 3px;
+                margin: 16px 4px 0;
+            }
+            article:nth-child(5){
+                margin-bottom: 37px;
             }
             article{
-                display: inline-block;
-                width: 100%;
+                width: 92%;
                 background-color: white;
                 border-radius: 1em;
                 margin-bottom: 1em;
+                padding: 4%;
                 h4{
-                margin: 0.85em 0.5em 0;
-                font-size: 1.1em;
+                margin: 0;
+                font-weight: 700;
                 }
                 div{
                     display: flex;
                     justify-content: space-between;
                     p{
-                        margin: 0 0.65em 0.85em;
+                        margin: 0;
                         font-size: 0.9em;
                     }
                     p + p{
@@ -45,9 +59,4 @@
             }
         }
     }
-}
-footer{
-    position: absolute;
-    margin-top: 84.5em;
-    width: 95.5%;
 }

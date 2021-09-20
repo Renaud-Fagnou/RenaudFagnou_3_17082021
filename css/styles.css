@@ -8,17 +8,18 @@ h1 {
   font-family: Shrikhand;
 }
 
-h3 {
-  font-weight: 400;
-  font-size: 1em;
-}
-
 .restaurant-menu h2 {
   font-family: Shrikhand;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 20px 4px 5px;
   font-weight: 300;
   font-size: 1.75em;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1em;
 }
 
 footer {
@@ -45,6 +46,7 @@ footer {
 .button__bg {
   background: #15DEA5;
   position: absolute;
+  border-radius: 2em;
   top: 0;
   right: 0;
   bottom: 0;
@@ -58,14 +60,16 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 100%;
 }
 header a {
+  position: relative;
   height: 72.5%;
   color: black;
   text-shadow: 0 0 50px black;
   font-size: 1.25em;
   filter: blur(0.6px);
+  align-self: center;
+  left: -60px;
 }
 header img {
   width: 50%;
@@ -113,6 +117,11 @@ footer ul li a :nth-child(2) {
 footer ul li a i {
   align-self: center;
   font-size: 0.8em;
+}
+
+.footer-menu {
+  position: relative;
+  top: 225px;
 }
 
 .explore {
@@ -273,55 +282,64 @@ footer ul li a i {
   padding: 0.25em 0.8em 1em;
 }
 
+body {
+  margin: 2%;
+}
+
 .restaurant-menu img {
   object-fit: cover;
   position: absolute;
-  width: 95.5%;
+  width: 96%;
   height: 16.75em;
 }
+.restaurant-menu .div-button {
+  text-align: center;
+}
+.restaurant-menu .div-button .button {
+  padding: 0.75em 2.75em;
+  margin: 0.7em 0 4em;
+}
 .restaurant-menu > div {
-  position: absolute;
+  position: relative;
   background-color: #f2f2f2;
   border-radius: 3em 3em 0 0;
-  width: 87%;
-  margin-top: 13.5em;
-  padding: 1em;
+  top: 225px;
+  padding: 4%;
 }
-.restaurant-menu > div .button {
-  padding: 0.75em 2.75em;
-  margin: 2em 4.5em 4em;
+.restaurant-menu > div section .underline {
+  content: none;
+  width: 40px;
+  height: 3px;
+  margin: 3px 4px 13px;
+  background-color: #99E2D0;
 }
 .restaurant-menu > div section h3 {
-  margin-left: 0.25em;
-  text-decoration: underline #99E2D0 3px;
+  margin: 16px 4px 0;
+}
+.restaurant-menu > div section article:nth-child(5) {
+  margin-bottom: 37px;
 }
 .restaurant-menu > div section article {
-  display: inline-block;
-  width: 100%;
+  width: 92%;
   background-color: white;
   border-radius: 1em;
   margin-bottom: 1em;
+  padding: 4%;
 }
 .restaurant-menu > div section article h4 {
-  margin: 0.85em 0.5em 0;
-  font-size: 1.1em;
+  margin: 0;
+  font-weight: 700;
 }
 .restaurant-menu > div section article div {
   display: flex;
   justify-content: space-between;
 }
 .restaurant-menu > div section article div p {
-  margin: 0 0.65em 0.85em;
+  margin: 0;
   font-size: 0.9em;
 }
 .restaurant-menu > div section article div p + p {
   font-weight: bold;
-}
-
-footer {
-  position: absolute;
-  margin-top: 84.5em;
-  width: 95.5%;
 }
 
 /*# sourceMappingURL=styles.css.map */

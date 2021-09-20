@@ -2,13 +2,15 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 100%;
     a{
+        position: relative;
         height: 72.5%;
         color: black;
         text-shadow: 0 0 50px black;
         font-size: 1.25em;
         filter: blur(0.6px);
+        align-self: center;
+        left: -60px;
     }
     img{
         width: 50%;
