@@ -17,7 +17,7 @@
         }
     }
     &__bg{
-        background: #15DEA5;
+        background: linear-gradient($color-secondary-lighten, $color-primary-lighten);
         position: absolute;
         border-radius: 2em;
         top: 0;

@@ -1,0 +1,35 @@
+.card-footer__hearts{
+    position: relative;
+    width: 15%;
+    z-index: 1;
+    padding: 0.6em 0;
+	cursor: pointer;
+    color: black;
+    font-size: 1.55em;
+    transition: transform 1000ms;
+    &:hover{
+        background: linear-gradient(to right bottom, $color-secondary 0%, $color-primary 70%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        & .card-footer__hearts--full{
+            opacity:1;
+        }
+    }
+    &--full{
+        position: absolute;
+        background: linear-gradient(to top, $color-secondary 40%, $color-primary 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        top: 18px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+}
