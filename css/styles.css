@@ -74,6 +74,7 @@ footer {
 .card-footer__hearts:hover {
   background: linear-gradient(to right bottom, #FF79DA 0%, #9356DC 70%);
   -webkit-background-clip: text;
+  background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -85,6 +86,7 @@ footer {
   position: absolute;
   background: linear-gradient(to top, #FF79DA 40%, #9356DC 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -130,6 +132,7 @@ footer h1 {
 }
 footer ul {
   padding: 0 1.5em;
+  margin-bottom: 0;
 }
 footer ul li {
   display: flex;
@@ -164,6 +167,66 @@ footer ul li a i {
 .footer-menu {
   position: relative;
   top: 225px;
+}
+
+body {
+  margin: 0;
+}
+
+.restaurant-menu img {
+  object-fit: cover;
+  position: absolute;
+  width: 96%;
+  height: 16.75em;
+}
+.restaurant-menu .div-button {
+  text-align: center;
+}
+.restaurant-menu .div-button .button {
+  padding: 0.75em 2.75em;
+  margin: 0.7em 0 4em;
+}
+.restaurant-menu > div {
+  position: relative;
+  background-color: #f2f2f2;
+  border-radius: 3em 3em 0 0;
+  top: 225px;
+  padding: 4%;
+}
+.restaurant-menu > div section .underline {
+  content: none;
+  width: 40px;
+  height: 3px;
+  margin: 3px 4px 13px;
+  background-color: #99E2D0;
+}
+.restaurant-menu > div section h3 {
+  margin: 16px 4px 0;
+}
+.restaurant-menu > div section article:nth-child(5) {
+  margin-bottom: 37px;
+}
+.restaurant-menu > div section article {
+  width: 92%;
+  background-color: white;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 4%;
+}
+.restaurant-menu > div section article h4 {
+  margin: 0;
+  font-weight: 700;
+}
+.restaurant-menu > div section article div {
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant-menu > div section article div p {
+  margin: 0;
+  font-size: 0.9em;
+}
+.restaurant-menu > div section article div p + p {
+  font-weight: bold;
 }
 
 .explore {
@@ -258,6 +321,73 @@ footer ul li a i {
   color: #9356DC;
 }
 
+.loader {
+  display: flex;
+  flex-direction: column;
+  font: 2em bold;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  animation: loaderanim 0.01s;
+  animation-delay: 3500ms;
+  animation-fill-mode: forwards;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader__text {
+  text-align: center;
+}
+.loader__bar {
+  width: 80%;
+  height: 50px;
+  border: black solid 2px;
+}
+.loader__bar--progress {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #99E2D0;
+  transform-origin: left;
+  animation: progress-bar 2500ms;
+}
+
+.container {
+  z-index: -1;
+}
+
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.1;
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  24% {
+    transform: scaleX(0.4);
+  }
+  46% {
+    transform: scaleX(0.81);
+  }
+  85%, 100% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes loaderanim {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 .restaurants {
   background-color: #f2f2f2;
   padding-bottom: 3.35em;
@@ -315,66 +445,6 @@ footer ul li a i {
 .restaurants a article .card-footer__text :last-child {
   margin: 0;
   padding: 0.25em 0.8em 1em;
-}
-
-body {
-  margin: 2%;
-}
-
-.restaurant-menu img {
-  object-fit: cover;
-  position: absolute;
-  width: 96%;
-  height: 16.75em;
-}
-.restaurant-menu .div-button {
-  text-align: center;
-}
-.restaurant-menu .div-button .button {
-  padding: 0.75em 2.75em;
-  margin: 0.7em 0 4em;
-}
-.restaurant-menu > div {
-  position: relative;
-  background-color: #f2f2f2;
-  border-radius: 3em 3em 0 0;
-  top: 225px;
-  padding: 4%;
-}
-.restaurant-menu > div section .underline {
-  content: none;
-  width: 40px;
-  height: 3px;
-  margin: 3px 4px 13px;
-  background-color: #99E2D0;
-}
-.restaurant-menu > div section h3 {
-  margin: 16px 4px 0;
-}
-.restaurant-menu > div section article:nth-child(5) {
-  margin-bottom: 37px;
-}
-.restaurant-menu > div section article {
-  width: 92%;
-  background-color: white;
-  border-radius: 1em;
-  margin-bottom: 1em;
-  padding: 4%;
-}
-.restaurant-menu > div section article h4 {
-  margin: 0;
-  font-weight: 700;
-}
-.restaurant-menu > div section article div {
-  display: flex;
-  justify-content: space-between;
-}
-.restaurant-menu > div section article div p {
-  margin: 0;
-  font-size: 0.9em;
-}
-.restaurant-menu > div section article div p + p {
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
