@@ -50,7 +50,7 @@
     46% {
         transform: scaleX(.81);
     }
-    85%,100% {
+    85%, 100% {
         opacity: 1;
     }
     100% {
@@ -60,6 +60,6 @@
 @keyframes loaderanim {
     100% {
       opacity: 0;
-      z-index: -10;
+      z-index: -1;
     }
 } 

@@ -35,3 +35,16 @@
         transition: opacity 250ms;
     }
 }
+.restaurant-menu{
+    .card-footer__hearts{
+        font-size: 1em;
+        padding: 0;
+        &--full{
+            top: 5px;
+            padding-left: 15px;
+        }
+        &--empty{
+            padding-left: 15px;
+        }
+    }
+}
