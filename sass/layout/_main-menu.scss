@@ -47,7 +47,6 @@ body{
                 animation-fill-mode: both;
             }
             article:nth-child(5){
-                margin-bottom: 37px;
                 animation: article-anim 1000ms;
                 transform: translate(0);
                 opacity: 0;
@@ -55,12 +54,14 @@ body{
                 animation-fill-mode: both;
             }
             article:nth-child(6){
-                margin-bottom: 37px;
                 animation: article-anim 1000ms;
                 transform: translate(0);
                 opacity: 0;
                 animation-delay: 2000ms;
                 animation-fill-mode: both;
+            }
+            .articlespacebottom{
+                margin-bottom: 37px;
             }
             article{
                 display: flex;
@@ -85,7 +86,7 @@ body{
                     flex-direction: column;
                     align-self: end;
                     div{
-                        font-size: 0.9em;
+                        font-size: 0.85em;
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         overflow: hidden;

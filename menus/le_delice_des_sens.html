@@ -4,83 +4,135 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link type="text/css" rel="stylesheet" href="../styles/styles.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/styles.css"/>
         <script src="https://kit.fontawesome.com/5d8e9e7fa8.js" crossorigin="anonymous"></script>
 		<title>ohmyfood</title>
     </head>
     <body>
         <header>
-            <div>
-                <div><a href="../index.html"><i class="fas fa-arrow-left"></i></a></div>
-                <div><img src="../images/logo/ohmyfood.png" alt="ohmyfood"></div>
-                <div></div>
-            </div>
+            <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+            <img src="../images/logo/ohmyfood.png" alt="ohmyfood">
         </header>
-        <main>
+        <main class="restaurant-menu">
             <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le_délice_des_sens">
             <div>
-                <h2>Le Le_délice_des_sens</h2><i class="far fa-heart"></i>
+                <h2>
+                    <span>Le délice des sens</span>
+                    <div class="card-footer__hearts">
+                        <i class="card-footer__hearts--empty far fa-heart"><i class="card-footer__hearts--full fas fa-heart"></i></i> 
+                    </div>
+                </h2>
                 <section>
                     <h3>ENTRÉES</h3>
-                    <div></div>
+                    <div class="underline"></div>
                     <article>
-                        <h4>Tartare de thon</h4>
-                        <p>Assaisonné au yuzu</p>
-                        <p>25&euro;</p>
+                        <div class="text">
+                            <h4>Tartare de thon</h4>
+                            <div>Assaisonné au yuzu</div>
+                        </div>
+                        <div class="price">25&euro;</div>
+                        <div class="verificon">
+                            <span><i class="fas fa-check-circle"></i></span>
+                        </div>
                     </article>
                     <article>
-                        <h4>Bouchée de homard croustillant</h4>
-                        <p>Et sa farandole de petits légumes</p>
-                        <p>35&euro;</p>
+                        <div class="text">
+                            <h4>Bouchée de homard croustillant</h4>
+                            <div>Et sa farandole de petits légumes</div>
+                        </div>
+                        <div class="price">35&euro;</div>
+                        <div class="verificon">
+                            <span><i class="fas fa-check-circle"></i></span>
+                        </div>
                     </article>
-                    <article>
-                        <h4>Velouté de cèpes</h4>
-                        <p>Aux truffes</p>
-                        <p>20&euro;</p>
+                    <article class="articlespacebottom">
+                        <div class="text">
+                            <h4>Velouté de cèpes</h4>
+                            <div>Aux truffes</div>
+                        </div>
+                        <div class="price">20&euro;</div>
+                        <div class="verificon">
+                            <span><i class="fas fa-check-circle"></i></span>
+                        </div>
                     </article>
                 </section>
                 <section>
                     <h3>PLATS</h3>
-                    <div></div>
+                    <div class="underline"></div>
                     <article>
-                        <h4>Poulet rôti aux herbes de Provence</h4>
-                        <p>Et sa crème de truffe</p>
-                        <p>40&euro;</p>
+                        <div class="text">
+                            <h4>Poulet rôti aux herbes de Provence</h4>
+                            <div>Et sa crème de truffe</div>
+                        </div>
+                        <div class="price">40&euro;</div>
+                        <div class="verificon">
+                            <span><i class="fas fa-check-circle"></i></span>
+                        </div>
                     </article>
                     <article>
-                        <h4>Langouste rôtie</h4>
-                        <p>Et ses légumes de saison</p>
-                        <p>35&euro;</p>
+                        <div class="text">
+                            <h4>Langouste rôtie</h4>
+                            <div>Et ses légumes de saison</div>
+                        </div>
+                        <div class="price">35&euro;</div>
+                        <div class="verificon">
+                            <span><i class="fas fa-check-circle"></i></span>
+                        </div>
                     </article>
-                    <article>
-                        <h4>Côte de boeuf Angus</h4>
-                        <p>Et sa purée de panais</p>
-                        <p>44&euro;</p>
+                    <article class="articlespacebottom">
+                        <div class="text">
+                            <h4>Côte de boeuf Angus</h4>
+                            <div>Et sa purée de panais</div>
+                        </div>
+                        <div class="price">44&euro;</div>
+                        <div class="verificon">
+                            <span><i class="fas fa-check-circle"></i></span>
+                        </div>
                     </article>
                 </section>
                 <section>
                     <h3>DESSERTS</h3>
-                    <div></div>
+                    <div class="underline"></div>
                     <article>
+                        <div class="text">
                         <h4>Farandole de desserts</h4>
-                        <p>Du chef</p>
-                        <p>18&euro;</p>
+                        <div>Du chef</div>
+                        </div>
+                        <div class="price">18&euro;</div>
+                        <div class="verificon">
+                            <span><i class="fas fa-check-circle"></i></span>
+                        </div>
                     </article>
                     <article>
-                        <h4>Crème brulée</h4>
-                        <p>Revisitée</p>
-                        <p>22&euro;</p>
+                        <div class="text">
+                            <h4>Crème brulée</h4>
+                            <div>Revisitée</div>
+                        </div>
+                        <div class="price">22&euro;</div>
+                        <div class="verificon">
+                            <span><i class="fas fa-check-circle"></i></span>
+                        </div>
                     </article>
-                    <article>
-                        <h4>Tiramisu</h4>
-                        <p>À la noisette</p>
-                        <p>23&euro;</p>
+                    <article class="articlespacebottom">
+                        <div class="text">
+                            <h4>Tiramisu</h4>
+                            <div>À la noisette</div>
+                        </div>
+                        <div class="price">23&euro;</div>
+                        <div class="verificon">
+                            <span><i class="fas fa-check-circle"></i></span>
+                        </div>
                     </article>
                 </section>
-                <button>Commander</button>
+                <div class="div-button">
+                    <button class="button">
+                        <p class="button__text">Commander</p>
+                        <div class="button__bg"></div>
+                    </button>
+                </div>
             </div>
         </main>
-        <footer>
+        <footer class="footer-menu">
             <h1>ohmyfood</h1>
             <ul>
                 <li><a href="#"><i class="fas fa-utensils"></i><p>Proposer un restaurant</p></a></li>

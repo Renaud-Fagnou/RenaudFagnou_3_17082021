@@ -230,7 +230,6 @@ body {
   animation-fill-mode: both;
 }
 .restaurant-menu > div section article:nth-child(5) {
-  margin-bottom: 37px;
   animation: article-anim 1000ms;
   transform: translate(0);
   opacity: 0;
@@ -238,12 +237,14 @@ body {
   animation-fill-mode: both;
 }
 .restaurant-menu > div section article:nth-child(6) {
-  margin-bottom: 37px;
   animation: article-anim 1000ms;
   transform: translate(0);
   opacity: 0;
   animation-delay: 2000ms;
   animation-fill-mode: both;
+}
+.restaurant-menu > div section .articlespacebottom {
+  margin-bottom: 37px;
 }
 .restaurant-menu > div section article {
   display: flex;
@@ -270,7 +271,7 @@ body {
   align-self: end;
 }
 .restaurant-menu > div section article div div {
-  font-size: 0.9em;
+  font-size: 0.85em;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
