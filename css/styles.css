@@ -284,13 +284,11 @@ body {
 }
 .restaurant-menu > div section article .price {
   font-weight: bold;
-  padding: 4%;
+  font-size: 0.9em;
+  padding: 4% 0;
   transform: translate(50px, 0);
-  transition: transform 1000ms ease-in-out;
-  transition-delay: 250ms;
 }
 .restaurant-menu > div section article .verificon {
-  height: 100%;
   align-self: center;
   text-align: center;
   color: white;
@@ -304,7 +302,8 @@ body {
   transform: translate(0, 0);
 }
 .restaurant-menu > div section article:hover .price {
-  transform: translate(0, 0);
+  animation: price-anim 1000ms 275ms;
+  animation-fill-mode: forwards;
 }
 
 @keyframes article-anim {
@@ -315,6 +314,43 @@ body {
   100% {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+@keyframes price-anim {
+  0% {
+    transform: translate(50px, 0);
+    padding: 4% 0;
+  }
+  10% {
+    padding: 4% 0.4%;
+  }
+  20% {
+    padding: 4% 0.8%;
+  }
+  30% {
+    padding: 4% 1.2%;
+  }
+  40% {
+    padding: 4% 1.6%;
+  }
+  50% {
+    padding: 4% 2%;
+  }
+  60% {
+    padding: 4% 2.4%;
+  }
+  70% {
+    padding: 4% 2.8%;
+  }
+  80% {
+    padding: 4% 3.2%;
+  }
+  90% {
+    padding: 4% 3.6%;
+  }
+  100% {
+    transform: translate(0, 0);
+    padding: 4%;
   }
 }
 .explore {
