@@ -96,7 +96,7 @@ footer {
   left: 0;
   opacity: 0;
   z-index: -1;
-  transition: opacity 250ms;
+  transition: opacity 1000ms;
 }
 
 .restaurant-menu .card-footer__hearts {
@@ -195,7 +195,7 @@ body {
   text-align: center;
 }
 .restaurant-menu .div-button .button {
-  padding: 0.75em 2.75em;
+  padding: 0 2.75em;
   margin: 0.7em 0 4em;
 }
 .restaurant-menu > div {
@@ -278,7 +278,7 @@ body {
 }
 .restaurant-menu > div section article .text {
   flex: 1;
-  padding: 4% 0 4% 4%;
+  padding: 4% 0 4% 1%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -288,6 +288,8 @@ body {
   font-size: 0.9em;
   padding: 4% 0;
   transform: translate(50px, 0);
+  animation: price-anim-out 750ms;
+  animation-fill-mode: both;
 }
 .restaurant-menu > div section article .verificon {
   align-self: center;
@@ -297,21 +299,25 @@ body {
   padding: 4%;
   font-size: 2em;
   transform: translate(61px, 0);
-  transition: transform 1000ms ease-in-out;
+  /*transition: transform 1000ms ease-in-out;*/
+  animation: verificon-anim-out 550ms linear;
+  animation-fill-mode: both;
 }
 .restaurant-menu > div section article .verificon i {
   transform: rotate(-360deg);
-  transition: transform 1250ms;
+  transition: transform 650ms;
 }
 .restaurant-menu > div section article:hover .verificon {
-  transform: translate(0, 0);
+  /*transform: translate(0, 0);*/
+  animation: verificon-anim-in 550ms linear;
+  animation-fill-mode: both;
 }
 .restaurant-menu > div section article:hover .verificon i {
   transform: rotate(0);
 }
 .restaurant-menu > div section article:hover .price {
-  animation: price-anim 1000ms 275ms;
-  animation-fill-mode: forwards;
+  animation: price-anim-in 750ms;
+  animation-fill-mode: both;
 }
 
 @keyframes article-anim {
@@ -324,7 +330,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes price-anim {
+@keyframes price-anim-in {
   0% {
     transform: translate(50px, 0);
     padding: 4% 0;
@@ -359,6 +365,59 @@ body {
   100% {
     transform: translate(0, 0);
     padding: 4%;
+  }
+}
+@keyframes price-anim-out {
+  0% {
+    transform: translate(0, 0);
+    padding: 4%;
+  }
+  10% {
+    padding: 4% 3.6%;
+  }
+  20% {
+    padding: 4% 3.2%;
+  }
+  30% {
+    padding: 4% 2.8%;
+  }
+  40% {
+    padding: 4% 2.4%;
+  }
+  50% {
+    padding: 4% 2%;
+  }
+  60% {
+    padding: 4% 1.6%;
+  }
+  70% {
+    padding: 4% 1.2%;
+  }
+  80% {
+    padding: 4% 0.8%;
+  }
+  90% {
+    padding: 4% 0.4%;
+  }
+  100% {
+    transform: translate(50px, 0);
+    padding: 4% 0;
+  }
+}
+@keyframes verificon-anim-in {
+  0% {
+    transform: translate(61px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes verificon-anim-out {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(61px, 0);
   }
 }
 .explore {
