@@ -9,7 +9,8 @@ body{
         height: 16.75em;
     }
     .div-button{
-        text-align: center;
+        display: flex;
+        justify-content: center;
         .button{
             padding: 0 2.75em;
             margin: 0.7em 0 4em;
@@ -239,3 +240,13 @@ body{
         transform: translate(61px,0);
     }
   }
+  @media all and (min-width: 480px){
+    .restaurant-menu{
+        img{
+            height: 30.75em;
+        }
+        > div{
+        top: 440px;
+        }
+    }
+}

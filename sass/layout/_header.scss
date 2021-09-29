@@ -17,3 +17,15 @@ header{
         width: 50%;
     }
 }
+@media all and (min-width: 480px){
+    header{
+        a{
+           
+            font-size: 2em;
+            left: -190px;
+        }
+        img{
+            width: 40%;
+        }
+    }
+}

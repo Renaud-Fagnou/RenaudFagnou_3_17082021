@@ -61,6 +61,11 @@ footer {
   transition: opacity 250ms;
 }
 
+@media all and (min-width: 480px) {
+  .button {
+    font-size: 2em;
+  }
+}
 .card-footer__hearts {
   position: relative;
   width: 15%;
@@ -131,6 +136,15 @@ header img {
   width: 50%;
 }
 
+@media all and (min-width: 480px) {
+  header a {
+    font-size: 2em;
+    left: -190px;
+  }
+  header img {
+    width: 40%;
+  }
+}
 footer {
   background-color: #3a3a3a;
 }
@@ -181,6 +195,24 @@ footer ul li a i {
   top: 225px;
 }
 
+@media all and (min-width: 480px) {
+  .footer-menu {
+    top: 440px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+  }
+  footer h1 {
+    padding-left: 0;
+  }
+  footer li {
+    justify-content: space-around;
+  }
+}
 body {
   margin: 0;
 }
@@ -192,7 +224,8 @@ body {
   height: 16.75em;
 }
 .restaurant-menu .div-button {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .restaurant-menu .div-button .button {
   padding: 0 2.75em;
@@ -418,6 +451,14 @@ body {
   }
   100% {
     transform: translate(61px, 0);
+  }
+}
+@media all and (min-width: 480px) {
+  .restaurant-menu img {
+    height: 30.75em;
+  }
+  .restaurant-menu > div {
+    top: 440px;
   }
 }
 .explore {
