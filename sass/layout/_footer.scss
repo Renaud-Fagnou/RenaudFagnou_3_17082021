@@ -52,18 +52,28 @@ footer{
 }
 @media all and (min-width: 480px){
     .footer-menu{
-        top: 440px;
+        top: 441px;
     }
     footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 2em;
         h1{
             padding-left: 0;
         }
         li{
             justify-content: space-around;
+        }
+    }
+}
+
+@media all and (min-width: 1024px){
+    footer ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        li{
+            align-items: flex-start;
         }
     }
 }

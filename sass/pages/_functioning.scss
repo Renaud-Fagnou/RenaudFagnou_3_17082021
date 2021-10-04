@@ -51,3 +51,18 @@
         }
     }
 }
+@media all and (min-width: 1024px){
+    .functioning{
+        margin-bottom: 3em;
+        h2{
+            text-align: center;
+        }
+        ol{
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 30%;
+            }
+        }
+    }
+}

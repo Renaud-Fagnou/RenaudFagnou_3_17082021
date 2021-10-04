@@ -1,6 +1,6 @@
 .card-footer__hearts{
     position: relative;
-    width: 15%;
+    right: 40px;
     z-index: 1;
     padding: 0.6em 0;
 	cursor: pointer;
@@ -39,12 +39,21 @@
     .card-footer__hearts{
         font-size: 1em;
         padding: 0;
+        right: 0;
         &--full{
             top: 5px;
             padding-left: 15px;
         }
         &--empty{
             padding-left: 15px;
+        }
+    }
+}
+@media all and (min-width: 480px){
+    .card-footer__hearts{
+        right: 0;
+        &--full{
+            top: 35px;
         }
     }
 }

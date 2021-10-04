@@ -20,12 +20,17 @@ header{
 @media all and (min-width: 480px){
     header{
         a{
-           
-            font-size: 2em;
-            left: -190px;
+            left: -130px;
         }
         img{
-            width: 40%;
+            width: 55%;
+        }
+    }
+}
+@media all and (min-width: 1024px){
+    header{
+        img{
+            width: 30%;
         }
     }
 }

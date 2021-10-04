@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+body{
+    max-width: 375px;
+    margin: 0 auto;
+}
 main{
     font-family: roboto;
 }
@@ -30,4 +33,18 @@ h3{
 }
 footer{
     font-family: roboto;
+}
+@media all and (min-width: 480px){
+    body{
+        max-width: 768px;
+        margin: 0 auto;
+        font-size: 150%;
+    }
+}
+@media all and (min-width: 1024px){
+    body{
+        max-width: 1360px;
+        margin: 0 auto;
+        font-size: 100%;
+    }
 }

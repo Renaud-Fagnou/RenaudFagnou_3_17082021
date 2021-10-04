@@ -1,6 +1,3 @@
-body{
-    margin: 0;
-}
 .restaurant-menu{
     img{
         object-fit: cover;
@@ -115,17 +112,15 @@ body{
                     background-color: $color-tertiary;
                     padding: 4%;
                     font-size: 2em;
-                    transform: translate(61px, 0);
-                    /*transition: transform 1000ms ease-in-out;*/
+                    transform: translate(120px, 0);
                     animation: verificon-anim-out 550ms linear;
                     animation-fill-mode: both;
                     i{
                         transform: rotate(-360deg);
-                        transition: transform 650ms;
+                        transition: transform 1000ms;
                     }
                 }
                 &:hover .verificon{
-                    /*transform: translate(0, 0);*/
                     animation: verificon-anim-in 550ms linear;
                     animation-fill-mode: both;
                     i{
@@ -226,7 +221,7 @@ body{
   }
   @keyframes verificon-anim-in{
     0%{
-        transform: translate(61px,0);
+        transform: translate(120px,0);
     }
     100%{
         transform: translate(0,0);
@@ -237,7 +232,7 @@ body{
         transform: translate(0,0);
     }
     100%{
-        transform: translate(61px,0);
+        transform: translate(120px,0);
     }
   }
   @media all and (min-width: 480px){
@@ -247,6 +242,59 @@ body{
         }
         > div{
         top: 440px;
+            section{
+                .underline{
+                    width: 80px;
+                    height: 8px;
+                    margin: 12.5px 4px 30px;
+                }
+            }
+        }
+        .card-footer__hearts{
+            &--full{
+                top: 10px;
+            }
+        }
+    }
+}
+@media all and (min-width: 1024px){
+    .restaurant-menu{
+        img{
+            width: 82.28%;
+        }
+    }
+    .restaurant-menu{
+        img{
+            width: 82.28%;
+        }
+        .div-button{
+            display: flex;
+            justify-content: center;
+            .button{
+                padding: 0 2.75em;
+                margin: 0.7em 0 4em;
+            }
+        }
+        > div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            h2{
+                width: 100%;
+            }
+            section{
+                width: 30%;
+                .underline{
+                    width: 40px;
+                    height: 3px;
+                    margin: 3px 4px 13px;
+                }
+            }
+            .div-button{
+                flex: 1;
+                position: relative;
+                top: 40px;
+            }
         }
     }
 }

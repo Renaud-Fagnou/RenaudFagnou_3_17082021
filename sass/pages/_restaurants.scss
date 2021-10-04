@@ -56,3 +56,40 @@
         }
     }
 }
+@media all and (min-width: 480px){
+    .restaurants{
+        a{
+            article{
+                p:first-child{
+                    margin-left: 27em;
+                }
+                div{
+                    .card-footer{
+                        &__hearts{
+                            right: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (min-width: 1024px){
+    .restaurants{
+        display: flex;
+        flex-wrap: wrap;
+        h2{
+            width: 100%;
+            text-align: center;
+            padding: 0;
+        }
+        a{
+            width: 25%;
+            article{
+                p:first-child{
+                    margin-left: 16em;
+                }
+            }
+        }
+    }
+}

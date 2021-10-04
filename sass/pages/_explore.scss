@@ -39,3 +39,19 @@
         padding-bottom: 3.5em;
     }
 }
+@media all and (min-width: 480px){
+    .explore{
+        height: 435px;
+        &__header i{
+            padding-left: 11em;
+        }  
+    }
+}
+@media all and (min-width: 1024px){
+    .explore{
+        height: 260px;
+        &__header i{
+            padding-left: 38em;
+        }  
+    }
+}
