@@ -279,7 +279,7 @@ footer ul li a i {
   justify-content: center;
 }
 .restaurant-menu .div-button .button {
-  padding: 0 2.75em;
+  padding: 1em 2.75em;
   margin: 0.7em 0 4em;
 }
 .restaurant-menu > div {
@@ -561,19 +561,20 @@ footer ul li a i {
   }
 }
 .explore {
-  height: 335px;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 .explore__header {
   display: flex;
-  flex: 1;
+  width: 100%;
+  justify-content: center;
   background-color: #e6e6e6;
   box-shadow: inset 0px 3px 3px #7e7e7e38;
   font-weight: bold;
 }
 .explore__header i {
-  padding: 1em 1.25em 0em 6em;
+  padding: 1em 1.25em 0em 0em;
 }
 .explore__main {
   flex: 3;
@@ -602,22 +603,6 @@ footer ul li a i {
   padding-bottom: 3.5em;
 }
 
-@media all and (min-width: 480px) {
-  .explore {
-    height: 435px;
-  }
-  .explore__header i {
-    padding-left: 11em;
-  }
-}
-@media all and (min-width: 1024px) {
-  .explore {
-    height: 260px;
-  }
-  .explore__header i {
-    padding-left: 38em;
-  }
-}
 .functioning h2 {
   padding: 1.8em 0.8em 0;
   margin-bottom: 0;
