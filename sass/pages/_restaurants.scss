@@ -86,5 +86,16 @@
         a{
             width: 25%;
         }
+        a{
+            article{
+                div{
+                    .card-footer{
+                        &__hearts{
+                            right: 10px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

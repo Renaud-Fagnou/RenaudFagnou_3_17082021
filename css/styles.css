@@ -84,7 +84,7 @@ footer {
 .card-footer__hearts {
   position: relative;
   text-align: center;
-  right: 40px;
+  right: 20px;
   height: 20px;
   width: 27px;
   z-index: 1;
@@ -810,6 +810,9 @@ footer ul li a i {
   }
   .restaurants a {
     width: 25%;
+  }
+  .restaurants a article div .card-footer__hearts {
+    right: 10px;
   }
 }
 
