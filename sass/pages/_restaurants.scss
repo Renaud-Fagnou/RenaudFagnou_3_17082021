@@ -14,6 +14,7 @@
             display: none;
         }
         article{
+            position: relative;
             background-color: white;
             width: 90%;
             margin: 5%;
@@ -22,7 +23,8 @@
             overflow: hidden;
             p:first-child{
                 position: absolute;
-                margin-left: 18em;
+                top: -5px;
+                right: 10px;
                 background-color: #99E2D0;
                 border-radius: 0.15em;
                 padding: 0.4em 0.9em;
@@ -60,9 +62,6 @@
     .restaurants{
         a{
             article{
-                p:first-child{
-                    margin-left: 27em;
-                }
                 div{
                     .card-footer{
                         &__hearts{
@@ -86,11 +85,6 @@
         }
         a{
             width: 25%;
-            article{
-                p:first-child{
-                    margin-left: 16em;
-                }
-            }
         }
     }
 }
