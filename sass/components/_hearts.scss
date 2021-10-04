@@ -1,6 +1,9 @@
 .card-footer__hearts{
     position: relative;
+    text-align: center;
     right: 40px;
+    height: 20px;
+    width: 27px;
     z-index: 1;
     padding: 0.6em 0;
 	cursor: pointer;
@@ -26,7 +29,7 @@
         -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color:transparent;
-        top: 18px;
+        top: 19px;
         right: 0;
         bottom: 0;
         left: 0;
@@ -40,6 +43,8 @@
         font-size: 1em;
         padding: 0;
         right: 0;
+        height: 35px;
+        width: 44px;
         &--full{
             top: 5px;
             padding-left: 15px;
@@ -51,9 +56,18 @@
 }
 @media all and (min-width: 480px){
     .card-footer__hearts{
+        height: 20px;
         right: 0;
         &--full{
-            top: 35px;
+            top: 28px;
+        }
+    }
+}
+@media all and (min-width: 1024px){
+    .card-footer__hearts{
+        height: 20px;
+        &--full{
+            top: 18px;
         }
     }
 }

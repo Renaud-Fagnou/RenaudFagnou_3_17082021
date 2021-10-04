@@ -83,7 +83,10 @@ footer {
 
 .card-footer__hearts {
   position: relative;
+  text-align: center;
   right: 40px;
+  height: 20px;
+  width: 27px;
   z-index: 1;
   padding: 0.6em 0;
   cursor: pointer;
@@ -110,7 +113,7 @@ footer {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  top: 18px;
+  top: 19px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -123,6 +126,8 @@ footer {
   font-size: 1em;
   padding: 0;
   right: 0;
+  height: 35px;
+  width: 44px;
 }
 .restaurant-menu .card-footer__hearts--full {
   top: 5px;
@@ -134,10 +139,19 @@ footer {
 
 @media all and (min-width: 480px) {
   .card-footer__hearts {
+    height: 20px;
     right: 0;
   }
   .card-footer__hearts--full {
-    top: 35px;
+    top: 28px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .card-footer__hearts {
+    height: 20px;
+  }
+  .card-footer__hearts--full {
+    top: 18px;
   }
 }
 header {
@@ -241,6 +255,9 @@ footer ul li a i {
   }
 }
 @media all and (min-width: 1024px) {
+  footer h1 {
+    font-size: 2em;
+  }
   footer ul {
     display: flex;
     width: 100%;
@@ -254,6 +271,7 @@ footer ul li a i {
   object-fit: cover;
   position: absolute;
   width: 100%;
+  max-width: 375px;
   height: 16.75em;
 }
 .restaurant-menu .div-button {
@@ -487,6 +505,7 @@ footer ul li a i {
 @media all and (min-width: 480px) {
   .restaurant-menu img {
     height: 30.75em;
+    max-width: 768px;
   }
   .restaurant-menu > div {
     top: 440px;
@@ -496,17 +515,17 @@ footer ul li a i {
     height: 8px;
     margin: 12.5px 4px 30px;
   }
+  .restaurant-menu .card-footer__hearts {
+    height: 50px;
+    width: 60px;
+  }
   .restaurant-menu .card-footer__hearts--full {
-    top: 10px;
+    top: 8px;
   }
 }
 @media all and (min-width: 1024px) {
   .restaurant-menu img {
-    width: 82.28%;
-  }
-
-  .restaurant-menu img {
-    width: 82.28%;
+    max-width: 1360px;
   }
   .restaurant-menu .div-button {
     display: flex;
@@ -515,6 +534,9 @@ footer ul li a i {
   .restaurant-menu .div-button .button {
     padding: 0 2.75em;
     margin: 0.7em 0 4em;
+  }
+  .restaurant-menu .card-footer__hearts--full {
+    top: 5px;
   }
   .restaurant-menu > div {
     display: flex;
@@ -793,6 +815,7 @@ footer ul li a i {
   }
   .restaurants a article div .card-footer__hearts {
     right: 40px;
+    width: 38px;
   }
 }
 @media all and (min-width: 1024px) {
@@ -809,7 +832,7 @@ footer ul li a i {
     width: 25%;
   }
   .restaurants a article p:first-child {
-    margin-left: 16em;
+    margin-left: 15em;
   }
 }
 

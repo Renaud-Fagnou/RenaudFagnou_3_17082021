@@ -68,12 +68,17 @@ footer{
 }
 
 @media all and (min-width: 1024px){
-    footer ul{
+    footer{
+        h1{
+            font-size: 2em;
+        }
+        ul{
         display: flex;
         width: 100%;
         justify-content: space-evenly;
-        li{
-            align-items: flex-start;
+            li{
+                align-items: flex-start;
+            }
         }
     }
 }

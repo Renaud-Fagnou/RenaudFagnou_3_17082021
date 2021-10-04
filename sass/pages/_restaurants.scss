@@ -67,6 +67,7 @@
                     .card-footer{
                         &__hearts{
                             right: 40px;
+                            width: 38px;
                         }
                     }
                 }
@@ -87,7 +88,7 @@
             width: 25%;
             article{
                 p:first-child{
-                    margin-left: 16em;
+                    margin-left: 15em;
                 }
             }
         }

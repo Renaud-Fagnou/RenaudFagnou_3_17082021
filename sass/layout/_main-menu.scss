@@ -3,6 +3,7 @@
         object-fit: cover;
         position: absolute;
         width: 100%;
+        max-width: 375px;
         height: 16.75em;
     }
     .div-button{
@@ -239,6 +240,7 @@
     .restaurant-menu{
         img{
             height: 30.75em;
+            max-width: 768px;
         }
         > div{
         top: 440px;
@@ -251,8 +253,10 @@
             }
         }
         .card-footer__hearts{
+            height: 50px;
+            width: 60px;
             &--full{
-                top: 10px;
+                top: 8px;
             }
         }
     }
@@ -260,12 +264,7 @@
 @media all and (min-width: 1024px){
     .restaurant-menu{
         img{
-            width: 82.28%;
-        }
-    }
-    .restaurant-menu{
-        img{
-            width: 82.28%;
+            max-width: 1360px;
         }
         .div-button{
             display: flex;
@@ -273,6 +272,11 @@
             .button{
                 padding: 0 2.75em;
                 margin: 0.7em 0 4em;
+            }
+        }
+        .card-footer__hearts{
+            &--full{
+                top: 5px;
             }
         }
         > div{
