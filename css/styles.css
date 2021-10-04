@@ -531,10 +531,6 @@ footer ul li a i {
     display: flex;
     justify-content: center;
   }
-  .restaurant-menu .div-button .button {
-    padding: 0 2.75em;
-    margin: 0.7em 0 4em;
-  }
   .restaurant-menu .card-footer__hearts--full {
     top: 5px;
   }
