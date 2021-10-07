@@ -8,3 +8,10 @@ $color-button-shadow:#24232338;
 $color-button-shadow-darken: darken($color-button-shadow, 50);
 
 $shadow: inset 0 3px 3px #7e7e7e38;
+
+@mixin mix-article-anim{
+    animation: article-anim 1000ms;
+    transform: translate(0);
+    opacity: 0;
+    animation-fill-mode: both;
+}

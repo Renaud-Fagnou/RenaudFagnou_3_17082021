@@ -303,29 +303,29 @@ footer ul li a i {
   animation: article-anim 1000ms;
   transform: translate(0);
   opacity: 0;
-  animation-delay: 500ms;
   animation-fill-mode: both;
+  animation-delay: 500ms;
 }
 .restaurant-menu > div section article:nth-child(4) {
   animation: article-anim 1000ms;
   transform: translate(0);
   opacity: 0;
-  animation-delay: 1000ms;
   animation-fill-mode: both;
+  animation-delay: 1000ms;
 }
 .restaurant-menu > div section article:nth-child(5) {
   animation: article-anim 1000ms;
   transform: translate(0);
   opacity: 0;
-  animation-delay: 1500ms;
   animation-fill-mode: both;
+  animation-delay: 1500ms;
 }
 .restaurant-menu > div section article:nth-child(6) {
   animation: article-anim 1000ms;
   transform: translate(0);
   opacity: 0;
-  animation-delay: 2000ms;
   animation-fill-mode: both;
+  animation-delay: 2000ms;
 }
 .restaurant-menu > div section .articlespacebottom {
   margin-bottom: 37px;
