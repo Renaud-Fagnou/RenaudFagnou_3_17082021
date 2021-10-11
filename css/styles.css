@@ -175,9 +175,6 @@ header img {
 }
 
 @media all and (min-width: 480px) {
-  header a {
-    left: -130px;
-  }
   header img {
     width: 55%;
   }
