@@ -31,13 +31,8 @@ En plus des systèmes classiques de réservation, les clients pourront composer 
 
 II.FONCTIONNALITÉES
 
-- Les usagers pourront rechercher des hébergements dans la ville de leur choix.
-  Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager.
-  En revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.
-- Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour l’instant les liens seront vides.
-- Les filtres ne seront pas fonctionnels pour cette version, en revanche, il faut qu’ils changent d’apparence au survol.
-  L’effet le plus approprié nous est libre d'interprétation et de conception.
-- Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
+- Le site répertorie les menus de restaurants gastronomiques.
+- En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée.
 
 III.COMPÉTENCES ÉVALUÉES
 
